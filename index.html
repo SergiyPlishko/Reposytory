@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
   </head>
   <body>
     <!--Шапка сайту-->
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="container header-posicion">
         <nav class="navigation">
           <a href="/" class="logo"
             ><span class="logo-web">Web</span
-            ><span class="logo-studio"></span>Studio</a
+            ><span class="logo-studio">Studio</span></a
           >
           <ul class="nav-list-item">
             <li class="nav-list">
@@ -36,14 +36,14 @@
             </li>
           </ul>
         </nav>
-        <ul contact-menu>
+        <ul class="contact-menu">
           <li class="contact-list">
-            <a href="info@devstudio.com" class="contact-link"
+            <a href="info@devstudio.com" class="contact-email"
               >info@devstudio.com</a
             >
           </li>
           <li class="contact-list">
-            <a href="+380961111111" class="contact-link">+38 096 111 11 11</a>
+            <a href="+380961111111" class="contact">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -52,14 +52,14 @@
     <main>
       <!--Hero section-->
       <section class="section-one">
-        <div class="container-2">
+        <div class="container">
           <h1 class="title-text">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button">Змовити послугу</button>
         </div>
         <!--Наші особливості-->
       </section>
       <section class="section-info">
-        <div class="container-3">
+        <div class="container">
           <ul class="info">
             <li class="info-list">
               <h2 class="title-info">УВАГА ДО ДЕТАЛЕЙ</h2>
@@ -92,8 +92,8 @@
         </div>
       </section>
       <!--Чим ми займаємося-->
-      <section>
-        <div class="container-4">
+      <section class="section-menu">
+        <div class="container">
           <h2 class="title-menu">Чим ми займаємось</h2>
           <ul class="flex">
             <li>
@@ -126,13 +126,14 @@
           </ul>
         </div>
       </section>
-      <section>
-        <!--Наша команда-->
-        <div class="container-4">
+      <!--Наша команда-->
+      <section class="section-team">
+        <div class="container">
           <h2 class="title-team">Наша команда</h2>
           <ul class="list-team">
-            <li>
+            <li class="list-img-team">
               <img
+                class="img-team"
                 class="photo"
                 src=".//Images/img.1.jpg"
                 alt="Ігор Дем'яненко"
@@ -144,6 +145,7 @@
             </li>
             <li>
               <img
+                class="img-team"
                 class="photo-1"
                 src=".//Images/img.2.jpg"
                 alt="Ольга Рєпіна"
@@ -155,6 +157,7 @@
             </li>
             <li>
               <img
+                class="img-team"
                 class="photo-3"
                 src=".//Images/img.3.jpg"
                 alt="Микола Тарасов"
@@ -166,6 +169,7 @@
             </li>
             <li>
               <img
+                class="img-team"
                 class="photo-4"
                 src=".//Images/img.4.jpg"
                 alt="Михайло Єрмаков"
@@ -180,19 +184,24 @@
       </section>
     </main>
     <!--Футер сайту-->
-    <footer>
-      <div class="container-5">
-        <a href="/"><span class="logo-web">Web</span>Studio</a>
-        <address>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo-link" href="/"
+          ><span class="logo-web">Web</span
+          ><span class="logo-footer-studio">Studio</span></a
+        >
+        <address class="address">
           <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="addres-info">
             <li class="list-contact-info">
-              <a class="link-info" href="info@devstudio.com"
+              <a class="link-info" href="email:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link-info" href="tel+380961111111">+38 096 111 11 11</a>
+              <a class="link-info" href="tel+:380961111111"
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
